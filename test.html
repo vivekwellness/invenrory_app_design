@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  .testimonial-slider {
+  background: url(https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Frame_97.png?v=1715880831) no-repeat center center;
+  background-size: cover;
+  padding: 6em 2em 6em;
+  position: relative !important;
+}
+.testimonial-title {
+  color: #fff;
+}
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+.carousel {
+    position: static;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #FF671B;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  top: 60%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 1rem;
+  height: 1rem;
+}
+
+
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+    position: absolute;
+    left: 1em;
+    top: 10%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+        left: 80%;
+    }
+	.carousel-control-prev{
+        left: 76%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+  <div class="testimonial-slider">
+    <div id="carouselExampleControls" class="carousel carousel-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-title">
+              <i class="bi bi-quote display-1"></i>
+              <h3 class="text-uppercase text-center" style="font-size: 1rem; color: #FF671B;">Testimonial</h3>
+              <h2 class="fw-bold display-6 text-dark text-uppercase text-center">Why People Believe In Us!</h2>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.225 17.3917C10.5153 17.1014 10.6604 16.7319 10.6604 16.2833C10.6604 15.8347 10.5153 15.4653 10.225 15.175L4.04998 9L10.225 2.825C10.5153 2.53472 10.6604 2.16527 10.6604 1.71666C10.6604 1.26805 10.5153 0.898606 10.225 0.608329C9.93471 0.318051 9.56526 0.172913 9.11665 0.172913C8.66804 0.172913 8.29859 0.318051 8.00832 0.608329L0.724983 7.89166C0.56665 8.05 0.454233 8.22152 0.387733 8.40625C0.322289 8.59097 0.289566 8.78888 0.289566 9C0.289566 9.21111 0.322289 9.40902 0.387733 9.59375C0.454233 9.77847 0.56665 9.95 0.724983 10.1083L8.00832 17.3917C8.29859 17.6819 8.66804 17.8271 9.11665 17.8271C9.56526 17.8271 9.93471 17.6819 10.225 17.3917Z" fill="white"/>
+                </svg>                
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.775016 17.3917C0.484738 17.1014 0.3396 16.7319 0.3396 16.2833C0.3396 15.8347 0.484738 15.4653 0.775016 15.175L6.95002 9L0.775016 2.825C0.484738 2.53472 0.3396 2.16527 0.3396 1.71666C0.3396 1.26805 0.484738 0.898606 0.775016 0.608329C1.06529 0.318051 1.43474 0.172913 1.88335 0.172913C2.33196 0.172913 2.70141 0.318051 2.99168 0.608329L10.275 7.89166C10.4333 8.05 10.5458 8.22152 10.6123 8.40625C10.6777 8.59097 10.7104 8.78888 10.7104 9C10.7104 9.21111 10.6777 9.40902 10.6123 9.59375C10.5458 9.77847 10.4333 9.95 10.275 10.1083L2.99168 17.3917C2.70141 17.6819 2.33196 17.8271 1.88335 17.8271C1.43474 17.8271 1.06529 17.6819 0.775016 17.3917Z" fill="white"/>
+                </svg>                
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="col-md-8">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_10_2ca438f6-edd9-4aef-a724-e224d18f2cbe.png?v=1715881869" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Easter Howard</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">Amazing product!</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_11.png?v=1715881868" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Wade Warren</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">So Delicious!</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+             <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_10_2ca438f6-edd9-4aef-a724-e224d18f2cbe.png?v=1715881869" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Easter Howard</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">Amazing product!</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_11.png?v=1715881868" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Wade Warren</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">So Deilicous</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_10_2ca438f6-edd9-4aef-a724-e224d18f2cbe.png?v=1715881869" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Easter Howard</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">Amazing product!</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0535/4651/6673/files/Ellipse_11.png?v=1715881868" alt="" srcset="" class="mb-4 me-4">
+                    <h5 class="card-title text-dark">Easter Howard</h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2  text-uppercase" style="color: #FF671B;">Amazing product!</h6>
+                    <p class="card-text">Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                    <div class="d-flex">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 0L12.8574 7.25532H20.4861L14.3143 11.7394L16.6717 18.9947L10.5 14.5106L4.32825 18.9947L6.68565 11.7394L0.513906 7.25532H8.1426L10.5 0Z" fill="#FFB23E"/>
+                      </svg>   
+                    </div>
+                    
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

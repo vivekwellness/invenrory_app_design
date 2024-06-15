@@ -1,0 +1,254 @@
+<style>
+    .block__cbwrapper{
+display: grid;
+grid-template-columns: repeat(auto-fit, 130px);
+gap: 1rem;
+position: relative;
+}
+
+.block__title{
+text-align: left;
+margin-bottom: 10px;
+order: 2;
+}
+.block__bottomtitle__total h5{
+justify-content: start;
+}
+.block__bottomtitle__total .bottomtitle__total{
+font-size: 2rem!important;
+font-weight: 600 !important;
+order: 1;
+}
+h5#prvw__bottom_title+div{
+display: none !important;
+}
+.block__cbinfo{
+margin-left:0px;
+}
+.bottomtitle__total{
+font-size: 28px;
+line-height: 35px;
+font-weight: 600;
+ color: #d13d27 !important;
+}
+.block__bottomtitle__total{
+font-size: 0px;
+}
+.block__cbmain--content{
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.block__cbmain{
+align-items: start;
+}
+.block__cbmain--content--left{
+display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0px;
+}
+.block__cb label {
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+/*border-color: rgb(48, 172, 226) !important;
+background-color: rgba(48, 172, 226, 0.4) !important;*/
+border: 1px solid #a0c530 !important;
+background-color: #fff;
+}
+
+.prvw_outOfStock{
+font-weight: 600;
+  color: #fff;
+  margin-left: 0;
+  background: #f00;
+  padding: 6px;
+  border-radius: 10px;
+font-size: 1.3rem;
+}
+.prvw_block {
+  display: flex;
+  flex-direction: column;
+}
+.block__cbwrapper{
+order: 3;
+}
+.prvw_block h3, .prvw_block .h3, .prvw_block h4, .prvw_block .h4, .prvw_block h5, .prvw_block .h5, .prvw_block h6, .prvw_block .h6 .prvw_block {
+  font-family: SF-Heading-font !important;
+font-weight: 100;
+}
+
+.block__cbmain--radio{
+-webkit-box-shadow: 0 0 0px 1px #000;
+border: 1px solid #fff;
+width: 15px;
+height: 15px;
+margin-right: 5px;
+order: 2;
+position: absolute;
+top: 5px;
+  right: 5px;
+}
+.block__cbmain--content--left h5, .block__cbmain--content--right h6{
+margin-bottom: 0px;
+}
+.block__cbmain--content--right h6 {
+  order: 2;
+  text-align: center;
+  background: #a0c530;
+  padding: 1rem 0;
+  font-size: 20px;
+  width: 100%;
+  color: #fff!important;
+border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.prevprice{
+font-size: 14px;
+margin-top: 0px;
+}
+.block__cbmain--content--right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+flex-wrap: wrap;
+width: 100%;
+height: 70px;
+}
+.block__cbmain--content--left h4:after{
+  content: " Each";
+}
+#prvw_label__text__0{
+position: relative;
+}
+#prvw_label__text__0::before {
+  content: url(https://cdn.shopify.com/s/files/1/0625/8317/7380/files/cube_1.png?v=1698070897);
+  position: absolute;
+  left: 14px;
+  bottom: 7px;
+}
+.block__cbinfo--item{
+display: grid;
+  grid-template-areas:
+"num    num " 
+"dosage size";
+align-items: start;
+}
+.block__cbinfo--item span{
+margin-right: 0;
+grid-area: num;
+}
+.block__cbinfo--dropdown:not(:last-child){
+margin-right: 0px;
+grid-area: dosage;
+margin-right: 2px;
+}
+.block__cbinfo--dropdown:(:last-child){
+grid-area: size;
+}
+.block__cbinfo--dropdown select{
+width: 100%;
+padding: 10px 20px 10px 0px;
+  font-size: 10px;
+  line-height: 10px;
+}
+.block__cb label select{
+background-position-x: 100%;
+}
+.block__cb:hover.block__cb label {
+border: 1px solid rgb(48, 172, 226) !important;
+background-color: #fff ;
+transform: scale(1.05);
+}
+.block__cb:hover .block__cbmain--content--right h6{
+background: rgb(48, 172, 226) !important;
+color: #fff !important;
+}
+.block__cbmain--content--right h5{
+color: #d13d27 !important;
+font-size: 20px !important;
+}
+.block__cbmain--content--left div p {
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 500px){
+.block__cbwrapper form{
+grid-template-columns: repeat(auto-fit, 29vw);
+gap: 0.2rem;
+}
+.block__cb label{
+padding:0.3rem 0;
+}
+.block__cbmain--content--right h6{
+font-size: 15px !important;
+}
+}
+</style>
+
+<script>
+    $(function () {
+  let pack = document.querySelectorAll('.block__cbmain--content--left');
+  console.log(pack);
+  let packPrice1 = document.getElementById('prvw_totalAmount_0').innerHTML;
+  let packPrice1_trim = packPrice1.trim();
+  let packPrice1_rep = packPrice1_trim.replace('$', '');
+  let packPrice2 = document.getElementById('prvw_totalAmount_1').innerHTML;
+  let packPrice2_trim = packPrice2.trim();
+  let packPrice2_rep = packPrice2_trim.replace('$', '');
+  let packPrice3 = document.getElementById('prvw_totalAmount_2').innerHTML;
+  let packPrice3_trim = packPrice3.trim();
+  let packPrice3_rep = packPrice3_trim.replace('$', '');
+
+  let pack_opt1 = document.querySelectorAll('.prvw_selector_0');
+  console.log(pack_opt1);
+  pack_opt1.forEach((currentElement, index) => {
+    // console.log(currentElement)
+    currentElement.addEventListener('change', (e) => {
+      //    console.log(e.currentTarget.value);
+      let pack_optPrice1 = document.getElementById('prvw_totalAmount_0').innerHTML;
+      let pack_optPrice1_trim = pack_optPrice1.trim();
+      let pack_optPrice1_rep = pack_optPrice1_trim.replace('$', '');
+      console.log(pack_optPrice1_rep);
+    })
+  });
+
+  let total_price = document.getElementById('bottomtitle__total__price');
+  let totalPrice = total_price.innerHTML.replace('$', '');
+  console.log(totalPrice, typeof totalPrice)
+  for (let i = 0; i <= pack.length; i++) {
+    if (i == 0) {
+      let newElem = document.createElement('div');
+      newElem.innerHTML = `<p class="pack_softgels">60 Softgels</p>
+<p>1 months pack</p>
+<p>Expiry: 3 years</p>
+<p style="margin-top: 1rem;">$${(packPrice1_rep / 60).toFixed(2)}/Softgel</p>`
+      pack[i].appendChild(newElem);
+    }
+
+    if (i == 1) {
+      let newElem = document.createElement('div');
+      newElem.innerHTML = `<p>180 Softgels</p>
+<p>3 months pack</p>
+<p>Expiry : 3 years</p>
+<p style="margin-top: 1rem;">$${(packPrice2_rep / 180).toFixed(2)}/Softgel</p>`
+      pack[i].appendChild(newElem);
+    }
+
+    if (i == 2) {
+      let newElem = document.createElement('div');
+      newElem.innerHTML = `<p>240 Softgels</p>
+<p>6 months pack</p>
+<p>Expiry : 3 years</p>
+<p style="margin-top: 1rem;">$${(packPrice3_rep / 240).toFixed(2)}/Softgel</p>`
+      pack[i].appendChild(newElem);
+    }
+  }
+});
+</script>
